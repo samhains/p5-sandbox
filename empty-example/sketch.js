@@ -6,12 +6,8 @@ function setup() {
 }
 var y = 100;
 var x = 200
-var barHeight = 8;
-var d = new Date();
-var redrawInterval = 10000;
-var redrawTime = 0;
-var numOfBars = {numOfBars: 0}
-var barLines = [0, 3, 5, 7, 9, 11];
+var barHeight = 6;
+
 var cellX = {
 }
 var cellSpeed = {
@@ -49,7 +45,8 @@ function createCell(id, startAt, barNum, speed){
     cellSpeed[id] = speed
   }
   fill('black')
-  rect(cellX[id], barHeight*barNum, barHeight, barHeight);
+  // X position, Y position, width, height
+  rect(cellX[id], barHeight*barNum, barHeight*3, barHeight);
   cellX[id] = cellX[id] + cellSpeed[id];
 
 }
