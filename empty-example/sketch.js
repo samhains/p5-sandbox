@@ -1,6 +1,6 @@
 function setup() {
   // uncomment this line to make the canvas the full size of the window
-   createCanvas(windowWidth, windowHeight);
+   createCanvas(500, 300);
    strokeWeight(1);
    frameRate(30);
 }
