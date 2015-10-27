@@ -44,7 +44,7 @@ function setup() {
   // uncomment this line to make the canvas the full size of the window
    createCanvas(600, 500);
    strokeWeight(1);
-   frameRate(1);
+   frameRate(3);
 }
 // The statements in the setup() function
 // execute once when the program begins
